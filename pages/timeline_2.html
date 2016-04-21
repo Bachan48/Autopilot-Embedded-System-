@@ -1,0 +1,98 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AES | Timeline</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+<style>
+body{font: 14px "Open Sans", serif; background-color: #fdfdfd; float: left; height: 100%; position: relative; width: 100%;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+li{list-style: none; color: white;}
+h2{font-size: 24px; font-weight: 600; margin: 20px 0 10px; text-align: center;}
+h5{font-weight: 600; margin: 20px 0 10px; text-align: center;}
+
+.container{margin: 0 auto; max-width: 600px;}
+.row{float: left; width: 100%;}
+
+
+/*= timeline css for data in both side =*/
+.timeline-both-side{float: left; width: 96%; margin: 20px 2% 50px; position: relative; box-sizing: border-box;}
+.timeline-both-side:before{background-color: #ccc; bottom: 0; content: " "; left: 50%; position: absolute; top: 0; width: 1px;}
+.timeline-both-side:after{border-radius: 50%; bottom: -22px; content: ""; height: 18px; left: 50%; margin-left: -11px; position: absolute; width: 18px; border: 2px solid #ccc;}
+.timeline-both-side li {position: relative; float: left; width: 100%;}
+.timeline-both-side li .border-line{background-color: #ccc; font-size: 1.4em; height: 1px; left: 50%; margin-left: -8%; position: absolute; text-align: center; top: 50%; width: 8%; z-index: 100;}
+.timeline-both-side li.opposite-side .border-line{left: auto; right: 50%; margin-left: 0; margin-right: -8%;}
+.timeline-both-side li .border-line:before {background-color: #ccc; content: ""; height: 7px; position: absolute; right: -4px; top: -3px; width: 7px;}
+.timeline-both-side li.opposite-side .border-line:before{left: -4px; right: auto;}
+.timeline-both-side li .timeline-description{border-radius: 2px; background-color: #0000ff; border: 1px solid #ccc; float: left; font-size: 13px; padding: 10px; position: relative; width: 42%;}
+.timeline-both-side li.opposite-side .timeline-description{float: right;}
+/*= timeline css for data in both side end =*/
+</style>
+<body>
+<div class="container">
+    
+    
+    <div class="row">
+    	<h2>History of AES</h2><br>
+        <h5>1905 AD</h5>
+    	<ul class="timeline-both-side">
+            <li>
+                <div class="border-line"></div>
+                <div class="timeline-description">
+                    <p>1908 <br> Anschuts Gyroscope was invented.</p>
+                </div>
+            </li>
+            <li class="opposite-side">
+            	<div class="border-line"></div>
+                <div class="timeline-description">
+                	<p>1911 <br> Sperry Gyroscope was invented.</p>
+                </div>
+            </li>
+            <li>
+            	<div class="border-line"></div>
+                <div class="timeline-description">
+                    <p>1912 <br> First autopilot was developed by Sperry Corporation.</p>
+                </div>
+            </li>
+            <li class="opposite-side">
+            	<div class="border-line"></div>
+                <div class="timeline-description">
+                    <p>1914 <br> Demonstrated by Lawrence Sperry with his hands away from the controls and visible to onlookers.</p>
+                </div>
+            </li>
+            <li>
+            	<div class="border-line"></div>
+                <div class="timeline-description">
+                    <p>1920 <br> The Standard Oil tanker J.A.Moffet became the first ship to use an autopilot.</p>
+                </div>
+            </li>
+            <li class="opposite-side">
+                <div class="border-line"></div>
+                <div class="timeline-description">
+                    <p>1931 <br> For the first time in history a mechanical autopilot is licensed to fly passengers and airmail. The Department of Commerce permites it to serve as copilot of a large Condor 18 passenger plane.</p>
+                </div>
+            </li>
+            <li>
+                <div class="border-line"></div>
+                <div class="timeline-description">
+                    <p>1932 <br> Sperry Gyroscope Company developed the automatic pilot that Wiley Post would use in his first solo flight aroung the world.</p>
+                </div>
+            </li>
+            <li class="opposite-side">
+                <div class="border-line"></div>
+                <div class="timeline-description">
+                    <p>1933<br> Further developments of the autopilots were performed, such as improved control algorithms and hydraulic servomechanics. Also, inclusion of additional instrumentation such as the radio-navigation made it possible to fly at night and during bad weather.</p>
+                </div>
+            </li>
+            <li>
+                <div class="border-line"></div>
+                <div class="timeline-description">
+                    <p><br> </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
